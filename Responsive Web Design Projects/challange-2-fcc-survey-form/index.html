@@ -20,18 +20,18 @@
         <form id="survey-form">
             <fieldset>
             <div>
-            <label for="name-label">Name</label>
-            <input type="text" id="name-label" name="name" placeholder="John Smith" required >        
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required  >        
             </div>
 
             <div>
-            <label for="email-label">Email</label>
-            <input type="email" id="email-label" name="email" placeholder="abc@gmail.com" required>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
             </div>
             
             <div>
-            <label for="number-label">ID</label>
-            <input type="number" id="number-label" name="id" placeholder="153" required 
+            <label id="number-label" for="number">ID</label>
+            <input type="number" id="number" name="id" placeholder="153" required 
             min="111" max="999">
             <datalist id="number-label"></select>
                 <option value="">--Please select your id--</option>
@@ -104,7 +104,7 @@
             </fieldset>
             <div>
             <label for="comments">Additional Comments</label>
-            <input type="text" id="comments" name="comments" placeholder="Any feedback/suggestions">
+            <textarea type="text" id="comments" name="comments" placeholder="Any feedback/suggestions"></textarea>
             </div>
             <div>
             <input type="submit" id="submit" value="submit">
@@ -113,5 +113,6 @@
     </fieldset>
     </main>
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>
