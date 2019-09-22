@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("bhujia1.jpeg");
+    background-image: url("https://raw.githubusercontent.com/codermandy/fcc-projects/master/Responsive%20Web%20Design%20Projects/challange-3-fcc-product-landing-page/bhujia1.jpeg");
     height: 125vh;
     width: auto;
     background-size: cover;
@@ -78,5 +78,8 @@ figure{
    .products figure{
         flex: 1 96%;
     }
+  #video {
+   flex: 1 96%; 
+  }
 }
 
