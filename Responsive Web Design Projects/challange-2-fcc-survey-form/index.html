@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Mohit Kamra">
+        <meta name="description" content="This page is about survey
+        form which is one of the project in Responsive Web Design
+        Certificate of Free Code Camp">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <html lang="en-US"></html>
+    </head>
+<title>Survey Form</title>
+<body>
+    <header>
+    <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+        <p id="description">Please let us know through this survey form how we are doing</p>
+        <form id="survey-form">
+            <fieldset>
+            <div>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required  >        
+            </div>
+
+            <div>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+            </div>
+            
+            <div>
+            <label id="number-label" for="number">ID</label>
+            <input type="number" id="number" name="id" placeholder="153" required 
+            min="111" max="999">
+            <datalist id="number-label"></select>
+                <option value="">--Please select your id--</option>
+                <option value="123">123</option>
+                <option value="456">456</option>
+                <option value="789">789</option>
+                <option value="741">741</option>
+                <option value="852">852</option>
+                <option value="963">963</option>
+                <option value="159">159</option>
+            </datalist>
+            </div>
+            
+            <div>
+            <label for="dropdown">What is your current role?</label>
+            <select id="dropdown">
+                <option value="">--Please select your current role--</option>
+                <option value="student">Student</option>
+                <option value="job">Job</option>
+                <option value="self-employed">Self-Employed</option>
+                <option value="others">Others</option>
+                <option value="confedential">Prefer Not to say</option>
+            </select>
+            </div>
+
+            <div>
+            <fieldset>
+                <legend>Which all electronic items do you use in your Home?</legend>
+                <div>
+                    <input type="checkbox" id="washing-machine" name="device" value="washing-machine">
+                    <label for="washing-machine">Washing Machine</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ac" name="device" value="ac">
+                    <label for="ac">Air Conditioner</label>
+                    </div>
+                <div>
+                    <input type="checkbox" id="mobile" name="device" value="mobile">
+                    <label for="mobile">Smartphones</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="fridge" name="device" value="fridge">
+                    <label for="fridge">Refridgerator</label>
+                </div>
+                <div>
+                        <input type="checkbox" id="microwave" name="device" value="microwave">
+                        <label for="microwave">Microwave Oven</label>
+                </div>      
+                <div>
+                        <input type="checkbox" id="pc" name="device" value="pc">
+                        <label for="pc">Personal Computer</label>
+                </div>          
+            </fieldset>
+            
+            <fieldset>
+                <legend>Would you recommend our product to your friends?</legend>
+                <div>
+                    <input type="radio" id="option1"
+                    name="recommend" value="definately" checked>
+                    <label for ="option1">Yeah! why not?</label>
+                </div>
+                <input type="radio" id="option2"
+                name="recommend" value="maybe" >
+                <label for ="option2">I'll think</label>
+                <div>
+                    <input type="radio" id="option3"
+                    name="recommend" value="no">
+                    <label for ="option3">Never, forget about it</label>
+                </div>
+            </fieldset>
+            <div>
+            <label for="comments">Additional Comments</label>
+            <textarea type="text" id="comments" name="comments" placeholder="Any feedback/suggestions"></textarea>
+            </div>
+            <div>
+            <input type="submit" id="submit" value="submit">
+            </div>
+        </form>
+    </fieldset>
+    </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
