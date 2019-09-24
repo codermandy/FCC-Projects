@@ -17,6 +17,7 @@
             src="https://raw.githubusercontent.com/codermandy/fcc-projects/master/Responsive%20Web%20Design%20Projects/challange-3-fcc-product-landing-page/bhujia.png"
             alt="crispy bhujia company logo">
         </figure>
+        
         <nav id="nav-bar" >
             <ul>
             <li><a href="#header-img" class="nav-link" >Home</a></li>
@@ -27,13 +28,33 @@
         </nav>
     </header>
         <main id="main">
-     
-        <iframe id="video" width="420" height="315"
-src="https://www.youtube.com/embed/phbr0Ml-P04?controls=1">
-</iframe> 
-         
-        <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
-        
+         <article id="subscribe">
+                <h2><strong>Authentic Taste of Bikaner</strong></h2>
+        <form action="https://www.freecodecamp.com/email-submit" method="POST" id="submit">
+            <div>
+                <input type="email" id="email" name="email" placeholder="Enter your Email Address" required >
+            </div>
+            <div class="button">
+                <button type="submit" id="submit" value="submit">Get Started</button>            
+            </div>
+        </form>
+        </article>
+
+        <article id="about">
+            <p align="center">
+        <iframe id="video" 
+        title="Making of Bhujia"
+        width="400px" height="400px"
+        src="https://www.youtube.com/embed/phbr0Ml-P04?controls=1">This video link is not supported on your browser</iframe>
+        </p>
+    </article>
+
+    <article>
+        <section>
+            <h2></h2>
+        </section>
+    </article>
+
         <article id="products">
             <h2>Our Products</h2>
         <section class="products">
@@ -55,17 +76,6 @@ src="https://www.youtube.com/embed/phbr0Ml-P04?controls=1">
             </figure>
         </section>
         </article>   
-        
-        <div>
-            <label for="email">Subscribe Us</label>
-            <input type="email" id="email" name="email" placeholder="abc@gmail.com" >
-        </div>
-        
-        <div>
-                <input type="submit" id="submit" value="submit">                
-            </div>
-
-            </form>
         </main>
     </body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

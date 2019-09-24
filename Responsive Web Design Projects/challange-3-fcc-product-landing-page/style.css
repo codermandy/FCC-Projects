@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 body{
     background-image: url("https://raw.githubusercontent.com/codermandy/fcc-projects/master/Responsive%20Web%20Design%20Projects/challange-3-fcc-product-landing-page/bhujia1.jpeg");
     height: 125vh;
@@ -12,7 +12,7 @@ main{
     color:white;
 }
 
-header {
+    header {
     background-color:white;
     position:fixed;
     top:0;
@@ -21,7 +21,7 @@ header {
     height:80px;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 25px 0 black;s
+    box-shadow: 0 0 25px 0 black;
 }
 header *{
     display:inline;
@@ -53,6 +53,15 @@ figure{
     max-width: 100%;
 }
 
+.button a {
+    text-decoration: none;
+    color:red;
+}
+
+
+#subscribe {
+    text-align: center;
+}
 #header-img{
     height: 80px;
     margin-left: 40px;
@@ -69,6 +78,9 @@ figure{
         margin-top: 100px;
         padding:50px;
     }
+    .products {
+        flex: 2 46%%;
+    }
   }
 
 @media (max-width:600 px){
@@ -80,6 +92,9 @@ figure{
     }
   #video {
    flex: 1 96%; 
+  }
+  header li a {
+    min-height: 4em;
   }
 }
 
