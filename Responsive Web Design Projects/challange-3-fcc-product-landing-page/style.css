@@ -78,10 +78,11 @@ figure{
         margin-top: 100px;
         padding:50px;
     }
+
     .products {
-        flex: 2 46%%;
+        flex: 2 46% ;
     }
-  }
+  
 
 @media (max-width:600 px){
     .products {
@@ -97,4 +98,4 @@ figure{
     min-height: 4em;
   }
 }
-
+}
