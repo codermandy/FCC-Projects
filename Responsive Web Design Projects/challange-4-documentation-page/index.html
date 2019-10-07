@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype HTML>
 <html>
 
@@ -13,19 +12,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="fav_icon.png">
 </head>
-
 <body>
+    
+        <div class="main-body">
     <nav id="navbar">
         <header>JS Documentation</header>
         <ul>
-            <li><a href="#introduction" class="nav-link">Introduction</a></li>
-            <li><a href="#variables" class="nav-link">Variables</a></li>
-            <li></li><a href="#functions" class="nav-link">Functions</a></li>
-            <li><a href="#objects" class="nav-link">Objects</a></li>
-            <li> <a href="#string" class="nav-link">Strings</a></li>
-            <li><a href="#arrays" class="nav-link">Arrays</a></li>
-            <li><a href="#string" class="nav-link">String</a></li>
-            <li><a href="#regexp" class="nav-link">Regular Expressions</a></li>
+            <li><a href="#introduction_to_javascript" class="nav-link">Introduction to JavaScript</a></li>
+            <li><a href="#javascript_variables" class="nav-link">JavaScript Variables</a></li>
+            <li><a href="#javascript_functions" class="nav-link">JavaScript Functions</a></li>
+            <li><a href="#javascript_objects" class="nav-link">JavaScript Objects</a></li>
+            <li> <a href="#javascript_strings" class="nav-link">JavaScript Strings</a></li>
+            <li><a href="#javascript_arrays" class="nav-link">JavaScript Arrays</a></li>
+            <li><a href="#regular_expressions" class="nav-link">Regular Expressions</a></li>
             <li><a href="#html_dom" class="nav-link">HTML DOM</a></li>
             <li><a href="#referances" class="nav-link">Referances</a></li>
         </ul>
@@ -34,8 +33,8 @@
 
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="intoduction">
-            <header id="intoduction">Introduction to Javascript</header>
+        <section class="main-section" id="introduction_to_javascript">
+            <header id="introduction_to_javascript">Introduction to Javascript</header>
             <p>JavaScript is a lightweight, interpreted programming language. It is designed for creating
                 network-centric applications. It is complimentary to and integrated with Java. JavaScript is very easy
                 to implement because it is integrated with html. It is open and cross-platform.</p>
@@ -67,8 +66,8 @@
 
             </ul>
         </section>
-        <section class="main-section" id="variables">
-            <header id="variables">Javascript Variables</header>
+        <section class="main-section" id="javascript_variables">
+            <header id="javascript_variables">Javascript Variables</header>
             <p>JavaScript can be implemented using JavaScript statements that are placed within the &lt;script&gt; ...
                 &lt;script&gt; HTML tags in a web page.
 
@@ -84,8 +83,8 @@
                  </code>
             </p>
         </section>
-        <section class="main-section" id="functions">
-            <header id="functions">Javascript Functions</header>
+        <section class="main-section" id="javascript_functions">
+            <header id="javascript_functions">Javascript Functions</header>
             <p>A function is a group of reusable code which can be called anywhere in your program. This eliminates the
                 need of writing the same code again and again. It helps programmers in writing modular codes. Functions
                 allow a programmer to divide a big program into a number of small and manageable functions.
@@ -97,117 +96,119 @@
 
 
         </section>
-        <section class="main-section" id="objects">
-        <header id="objects">Javascript Objects</header>
-<p>    JavaScript is an Object Oriented Programming (OOP) language. A programming language can be called object-oriented if it provides four basic capabilities to developers −<p>JavaScript is an Object Oriented Programming (OOP) language. A programming language can be called object-oriented if it provides four basic capabilities to developers −</p>>
-<ul>
+        <section class="main-section" id="javascript_objects">
+            <header id="javascript_objects">Javascript Objects</header>
+            <p> JavaScript is an Object Oriented Programming (OOP) language. A programming language can be called
+                object-oriented if it provides four basic capabilities to developers −<p>JavaScript is an Object
+                    Oriented Programming (OOP) language. A programming language can be called object-oriented if it
+                    provides four basic capabilities to developers −</p>>
+                <ul>
+
+
+                    <li> <strong>Encapsulation</strong> − the capability to store related information, whether data or
+                        methods, together in an object.</li>
+
+                    <li><strong>Aggregation</strong> − the capability to store one object inside another object.</li>
+
+                    <li><strong>Inheritance</strong> − the capability of a class to rely upon another class (or number
+                        of classes) for some of its properties and methods.</li>
+
+                    <li><strong>Polymorphism</strong> − the capability to write one function or method that works in a
+                        variety of different ways.</li>
+
+                </ul>
+                <p>Objects are composed of attributes. If an attribute contains a function, it is considered to be a
+                    method of the object, otherwise the attribute is considered a property.</p>
+                <p>Object properties can be any of the three primitive data types, or any of the abstract data types,
+                    such as another object. Object properties are usually variables that are used internally in the
+                    object's methods, but can also be globally visible variables that are used throughout the page.
+                    The syntax for adding a property to an object is −
+
+                    <br><code>objectName.objectProperty = propertyValue;</code>
+                    <p>Methods are the functions that let the object do something or let something be done to it. There
+                        is a small difference between a function and a method – at a function is a standalone unit of
+                        statements and a method is attached to an object and can be referenced by the this keyword.
+
+                        Methods are useful for everything from displaying the contents of the object to the screen to
+                        performing complex mathematical operations on a group of local properties and parameters.
+
+                        For example − Following is a simple example to show how to use the write() method of document
+                        object to write any content on the document.
+                        <br>
+                        <code>document.write("This is test");</code>
+                    </p>
+
+        </section>
+        <section class="main-section" id="javascript_strings">
+            <header id="javascript_strings">Javascript Strings</header>
+            <p>The String object lets you work with a series of characters; it wraps Javascript's string primitive data
+                type with a number of helper methods.
+
+                As JavaScript automatically converts between string primitives and String objects, you can call any of
+                the helper methods of the String object on a string primitive.</p>
+                <p>The String object lets you work with a series of characters; it wraps Javascript's string primitive data type with a number of helper methods.
+
+                    As JavaScript automatically converts between string primitives and String objects, you can call any of the helper methods of the String object on a string primitive.</p>
+        <p>
+            Use the following syntax to create a String object −
+<br>
+<code>val = new String(string);</code>
+<br>
+The String parameter is a series of characters that has been properly encoded.
+        </p>
+                </section>
+        <section class="main-section" id="javascript_arrays">
+            <header id="javascript_arrays">Javascript Arrays</header>
+            <p> Array object lets you store multiple values in a single variable. It stores a fixed-size sequential
+            collection of elements of the same type. An array is used to store a collection of data, but it is often
+            more useful to think of an array as a collection of variables of the same type.
+            </p>
+<p>Use the following syntax to create an Array object −
+
+    <br><code> fruits = new Array( "apple", "orange", "mango" );</code><br>
     
-    </section>
-        <section class="main-section" id="strings"></section>
-        <header id="strings">Javascript Strings</header>
+    The Array parameter is a list of strings or integers. When you specify a single numeric parameter with the Array constructor, you specify the initial length of the array. The maximum length allowed for an array is 4,294,967,295.
+    
+    You can create array by simply assigning values as follows −
+    
+<code> var fruits = [ "apple", "orange", "mango" ];</code>
+    
+    You will use ordinal numbers to access and to set values inside an array as follows.
+    <br>
+    <code>fruits[0] is the first element
+    fruits[1] is the second element
+    fruits[2] is the third element</code>
+    </p>
+        </section>
+        <section class="main-section" id="regular_expressions">
+            <header id="regular_expressions">Regular Expressions</header>
+            A regular expression is an object that describes a pattern of characters.
 
-        <section class="main-section" id="arrays"></section>
-        <header id="arrays">Javascript Arrays</header>
+            The JavaScript RegExp class represents regular expressions, and both String and RegExp define methods that
+            use regular expressions to perform powerful pattern-matching and search-and-replace functions on text.
+        </section>
+        <section class="main-section" id="html_dom">
+            <header id="html_dom">HTML DOM</header>
+            <p>Every web page resides inside a browser window which can be considered as an object.
 
-        <section class="main-section" id="regexp"></section>
-        <header id="regexp">Regular Expressions</header>
+                A Document object represents the HTML document that is displayed in that window. The Document object has
+                various properties that refer to other objects which allow access to and modification of document
+                content.
 
-        <section class="main-section" id="html_dom"></section>
-        <header id="html_dom">HTML DOM</header>
-
-        <section class="main-section" id="Referances"></section>
-        <header id="referances">Referances</header>
-
-
+                The way a document content is accessed and modified is called the Document Object Model, or DOM. The
+                Objects are organized in a hierarchy. This hierarchical structure applies to the organization of objects
+                in a Web document.</p>
+        </section>
+        <section class="main-section" id="referances">
+            <header id="referances">Referances</header>
+            This documentation is made with the help of <a href="https://www.tutorialspoint.com/javascript"
+                alt="tutorialspoint">Tutorials Point</a>
+        </section>
     </main>
+    </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </body>
 
 </html>
-||||||| parent of d4312ad... challange4 initial commit
-=======
-<!doctype HTML>
-<html>
-
-<head>
-    <title>HTML documentation</title>
-    <meta lang="en" name="author" content="Mohit Kamra" name="description" content="This page is documentation 
-        page of the javascript language. Feel free to scroll if 
-        you are struck in javascript. Happy Coding!" charset="utf-8">
-    <title>HTML Documentation</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon"
-        href="https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697066-html5-512.png">
-</head>
-
-<body>
-    <main id="main-doc">
-        <section class="main-section">
-            <header id="intoduction_to_html_overview">Introduction to HTML overview</header>
-            <p>HTML is a fairly simple language made up of elements, which can be applied to pieces of text to give
-                them different meaning in a document, structure a document into logical sections and embed content
-                such as images and videos into a page.
-            </p>
-            <h2>Prerequisites</h2>
-            <p>Before starting this module, you don't need any previous HTML knowledge, but you should have at least
-                basic familiarity with using computers and using the web passively (i.e., just looking at it and
-                consuming content). You should have a basic work environment set up and understand how to create and 
-                manage files.
-            </p>
-        </section>
-        <section class="main-section">
-        <header id="getting_started_with_html">Getting started with HTML</header>
-
-
-
-
-
-
-        </section>
-        <section class="main-section"></section>
-        <header id="what's_in_the_head?">What's in the Head?</header>
-
-        <section class="main-section"></section>
-        <header id="html_text_fundamentals">HTML text Fundamentals</header>
-
-        <section class="main-section"></section>
-        <header id="creating_hyperlinks">Creating Hyperlinks</header>
-
-        <section class="main-section"></section>
-        <header id="advance_text_formatting">Advance text formatting</header>
-
-        <section class="main-section"></section>
-        <header id="document_and_website_structure">Document and website structure</header>
-
-        <section class="main-section"></section>
-        <header id="debugging_in_html">Debugging in HTML</header>
-
-        <section class="main-section"></section>
-        <header id="referances">Referances</header>
-
-        <nav id="navbar" class="navlink">
-            <header>HTML Documentation</header>
-            <ul>
-                <li><a class="navlink" href="#main-doc#intrduction_to_html_overview">Introduction to HTML overview</a>
-                </li>
-                <li><a class="navlink" href="#main-doc#getting_started_with_html">Getting started with HTML</a></li>
-                <li><a class="navlink" href="#main-doc#what's_in_the_head?">What's in the Head?</a></li>
-                <li><a class="navlink" href="#main-doc#html_text_fundamentals">HTML text Fundamentals</a></li>
-                <li><a class="navlink" href="#main-doc#creating_hyperlinks">Creating Hyperlinks</a></li>
-                <li><a class="navlink" href="#main-doc#advance_text_formatting">Advance text formatting</a></li>
-                <li><a class="navlink" href="#main-doc#document_and_website_structure">Document and website
-                        structure</a></li>
-                <li><a class="navlink" href="#main-doc#debugging_in_html">Debugging in HTML</a></li>
-                <li><a class="navlink" href="#main-doc#referances">Referances</a></li>
-            </ul>
-        </nav>
-    </main>
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-</body>
-
-</html>
->>>>>>> d4312ad... challange4 initial commit

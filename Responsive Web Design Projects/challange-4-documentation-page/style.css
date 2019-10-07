@@ -1,0 +1,50 @@
+div.main-body{
+display: grid;
+grid-template-columns: minmax(300px,auto) 1fr;
+grid-template-areas: "nav-bar main-doc";
+}
+
+
+
+nav#navbar{
+grid-area: navbar;
+position:fixed;
+}
+
+main#main-doc {
+  grid-area: main-doc;
+
+}
+
+
+nav#navbar a{
+  text-decoration: none;
+  display: block;
+  border:1px solid black;
+  padding: 5px;
+  margin:10px 0;
+  color:black;
+}
+
+
+
+header{
+  font-size:1.5em;
+  font-weight: bold;
+}
+
+code{
+  background-color: #CCC;
+  display:block;
+  padding: 15px;
+}
+
+@media screen and (max-width : 750px) { /*below 750px  */
+    div.main-body{
+      grid-template-columns: 1fr;
+      grid-template-areas: "navbar" "main-doc"; /*first pref. navbar 2nd main-doc*/
+  }
+  nav#navbar{
+    position: inherit;
+  }
+}
