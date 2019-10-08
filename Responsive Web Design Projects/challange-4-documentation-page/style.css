@@ -1,22 +1,27 @@
 div.main-body{
+  /* makes 2 grid 1 for nav bar and 
+  other for content */
 display: grid;
 grid-template-columns: minmax(300px,auto) 1fr;
 grid-template-areas: "nav-bar main-doc";
 }
 
-
+/*keeps navbar at fix position even after scrolling */
 
 nav#navbar{
 grid-area: navbar;
 position:fixed;
 }
 
+/*converts main-doc to grid */
+
 main#main-doc {
+  display:grid;
   grid-area: main-doc;
 
 }
 
-
+/* nav bar design */
 nav#navbar a{
   text-decoration: none;
   display: block;
@@ -27,24 +32,27 @@ nav#navbar a{
 }
 
 
-
+/* headings bold and big size */
 header{
   font-size:1.5em;
   font-weight: bold;
 }
-
+/* code snippets design */
 code{
   background-color: #CCC;
   display:block;
   padding: 15px;
 }
-
+/*  media queries mobile devices */
 @media screen and (max-width : 750px) { /*below 750px  */
     div.main-body{
-      grid-template-columns: 1fr;
+      margin: 10px;
+      grid-template-columns: 1fr;  
       grid-template-areas: "navbar" "main-doc"; /*first pref. navbar 2nd main-doc*/
   }
+/*   nav bar above main content in mobile devices */
   nav#navbar{
-    position: inherit;
+    position: relative;
   }
 }
+
